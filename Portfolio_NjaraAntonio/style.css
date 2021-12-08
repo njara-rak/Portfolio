@@ -1,0 +1,447 @@
+
+/*Bare de navigation*/
+html{
+	scroll-behavior: smooth;
+}
+.fix{
+	z-index: 9999;
+	position: fixed;
+	color: white;
+	background-color: tomato;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: 900;
+	padding-top: 1vh;
+	right: 30px;
+	line-height: 75px;
+	bottom: 30px;
+	width: 40px;
+	height: 50px;
+	text-align: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+.affiche{
+	opacity: 1;
+	pointer-events: auto;
+}
+.hauteur{
+	height: 100vh;
+	background: url(images/getcertified.png) no-repeat center;
+	background-size: cover;
+	min-height: 500px;
+}
+@media screen and (max-width: 650px) {
+  .hauteur{
+	height: 100vh;
+	background: url(images/getcertified.png) no-repeat center;
+	min-height: 500px;
+	background-size: cover;
+	}
+}
+@media screen and (max-width: 768px) {
+	div div ul li a{
+		text-align: center;
+	}
+}
+
+div div nav{
+	background-color: tomato!important;
+	position: fixed!important;
+	z-index: 999;
+	top: 0;
+}
+.brand{
+	color: white;
+	font-family: 'ubuntu', sans-serif;
+	margin-left: 10vh;
+	font-size: 25px!important;
+	font-weight: 600!important;
+}
+.brand:hover{
+	color: Moccasin!important;
+	font-family: 'ubuntu', sans-serif;
+	margin-left: 10vh;
+	font-size: 35px;
+	font-weight: 600!important;
+}
+div div .divNav{
+	justify-content: right;
+	margin-right: 15vh;
+}
+div div ul li a{
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 18px;
+	transition: color 0.3s ease;
+}
+div div ul li a:hover{
+	color: LemonChiffon!important;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+
+
+/*Contenu d'accueil*/
+
+
+
+.accueil{
+	font-family: 'ubuntu', sans-serif;
+	padding-left: 12vh!important; 
+	padding-top: 25vh;
+	line-height: 45px;
+	color: MistyRose;
+}
+.text-1{
+	font-size: 25px;
+}
+.text-2{
+	font-size: 70px;
+	font-weight: 600;
+	margin-left: -3px;	
+}
+.text-3{
+	font-size: 35px;
+	margin: 5px 0;	
+}
+.dev{
+	color: tomato;
+}
+@media screen and (max-width: 650px) {
+	.text-1{
+		font-size: 20px;
+	}
+	.text-2{
+		font-size: 45px;
+		font-weight: bold;
+		margin-left: -3px;	
+	}
+	.text-3{
+		font-size: 25px;
+		margin: 5px 0;	
+	}
+}
+.btn{
+	font-family: 'ubuntu', sans-serif;
+	background-color: transparent!important;		
+	color: tomato!important;
+	border:1px solid tomato!important;
+	border-radius: 6px!important;
+	font-weight: bold!important;
+	opacity: 0.5;
+	-webkit-animation:anim 2s infinite;
+}
+.btn:hover{
+	font-family: 'ubuntu', sans-serif;
+	background-color: tomato!important;
+	border-radius: 6px!important;
+	font-weight: bold;
+	color: white!important;
+	opacity: 1
+}
+@keyframes anim {
+	50%{
+		border:2px solid tomato!important;
+		color: tomato;
+		opacity: 1;
+	}
+}
+
+
+/*A Propos*/
+
+
+
+#propos{
+	height: 100vh!important;
+	background-color:#fff3cd;	
+	min-height: 500px;
+}
+.titre{
+	text-align: center!important;
+	color: black; ;
+	font-size: 44px;
+	font-weight: 900;
+	padding-top: 20vh;
+}
+h1{
+	text-align: center;
+	position: relative;
+}
+#qui::before{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+   	left: 50%;
+   	width: 180px;
+   	height: 3px;
+   	background-color: black;
+   	transform: translateX(-50%);
+}
+#qui::after{
+	content: "Qui suis-je";
+	position: absolute;
+	bottom: -14px;
+   	left: 50%;
+   	font-size: 20px;
+   	padding: 5px;
+   	color: tomato;
+   	background-color: #fff3cd;
+   	transform: translateX(-50%);
+
+}
+
+@media screen and (max-width: 575px) {
+	#propos{
+		min-height: 140vh;
+		background-color:#fff3cd;
+	}
+	.image{
+		margin-left: 5vh;
+		border-radius: 6px;
+		max-height: 250px;
+	}
+}
+@media screen and (max-width: 700px) {
+	.divPropos{
+		justify-content: center!important;
+	}
+}
+
+@media screen (min-height: 577px) and (max-width: 948px) {
+	#propos{
+		min-height: 125vh;
+		background-color:#fff3cd;	
+	}
+	.image{
+		margin-left: 5vh;
+		border-radius: 6px;
+		max-height: 50px;
+	}
+}
+
+@media screen and (min-width: 949px) and (max-width: 2018px) {
+
+	.image{
+		margin-left: 5vh;
+		border-radius: 6px;
+		object-fit: contain;
+		max-height: 250px;	
+	}
+}
+@media screen and (min-width: 2019px) {
+	.image{
+		margin-left: 5vh;
+		border-radius: 6px;
+		height: 650px;
+	}
+}
+
+@media screen and (min-width: 1359px;) {
+	#propos{
+		min-height: 125vh;
+		background-color:#fff3cd;	
+	}
+}
+
+
+.image{
+		margin-left: 5vh;
+		border-radius: 20px;
+	}
+.h4{
+	text-align: center;
+}
+.divPropos div div{
+	justify-content: center!important;
+}
+.voir-cv{
+	font-family: 'ubuntu', sans-serif;
+	background-color: transparent!important;		
+	color: aqua!important;
+	border:1px solid aqua!important;
+	border-radius: 6px!important;
+	font-weight: bold!important;
+}
+.voir-cv:hover{
+	font-family: 'ubuntu', sans-serif;
+	background-color: aqua!important;
+	border-radius: 6px!important;
+	font-weight: bold;
+	color: white!important;
+}
+
+/*services*/
+
+
+
+#Services{
+	color: white;
+	height: 100vh;
+	background-color: black;
+	min-height: 600px;			
+}
+
+.titreService{
+	padding-top: 15vh;
+	color: white;
+}
+.rowService{
+	margin: auto!important;
+}
+.divService{
+
+	text-align: center;
+	color: white!important;
+	border-radius: 2px;
+	box-shadow: 1px 1px 10px tomato!important;
+	background-color: 	#282828 ;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+.divService:hover{
+		background-color: tomato ;
+		color: white!important;
+		font-weight: 400;
+		border-radius: 5px;
+}
+.divService:hover i{
+	color: white;
+}
+.divService i{
+	color: tomato;
+	font-size: 50px;
+}
+
+@media screen and (max-width: 770px) {
+	.rowService{ 
+		background-color: black;
+	}
+	.divService{
+		border-radius: 10px;
+		justify-content: center;
+		text-align: center;
+		color: white!important;
+		border-radius: 2px;
+		box-shadow: 1px 1px 10px tomato!important;
+		background-color: 	#282828 ;
+	}
+}
+@media screen and (max-width: 580px){
+	#Services{
+		min-height: 185vh!important;
+	}
+
+}
+
+
+/*compétence*/
+
+
+
+#Compétences{
+	height: 98vh;
+	min-height: 500px;
+	background-color:#fff3cd;
+
+}
+.competence {
+	background-color:#fff3cd;
+	margin: auto;
+	width: 100%;
+}
+@media screen and (min-width: 1110px){
+
+	.competence {
+		background-color:#fff3cd;		
+		margin: auto;
+		width: 100%;
+		height: 110vh;
+	}
+}
+.competence img{
+	height: 60%;
+}
+#comp::before{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+   	left: 50%;
+   	width: 400px;
+   	height: 3px;
+   	background-color: black;
+   	transform: translateX(-50%);
+}
+.head-compet{
+	width: 100%;
+	height: 30vh;
+}
+#comp{
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+#comp::after{
+	content: "Ce que je sais faire";
+	position: absolute;
+	bottom: -14px;
+   	left: 50%;
+   	font-size: 20px;
+   	padding: 5px;
+   	color: tomato;
+   	background-color: #fff3cd;
+   	transform: translateX(-50%);
+}
+@media screen and (max-width: 390px){
+	#comp{
+		margin-top: 5vh;
+		width: 100%;
+		position: relative;
+		text-align: center;
+	}
+	#comp::before{
+		content: "";
+		position: absolute;
+		bottom: 0px;
+	   	left: 50%;
+	   	width: 250px;
+	   	height: 3px;
+	   	background-color: black;
+	   	transform: translateX(-50%);
+	}
+	#comp::after{
+		content: "Ce que je sais faire";
+		position: absolute;
+		bottom: -14px;
+	   	left: 50%;
+	   	font-size: 20px;
+	   	padding: 5px;
+	   	color: tomato;
+	   	background-color: #fff3cd;
+	   	transform: translateX(-50%);
+	}
+}
+
+
+/*footer*/
+
+footer{
+	padding-top: 3vh;
+	height: 10vh;
+	background-color: tomato;
+}
+footer a img{
+
+	border-radius: 7px;
+	height:5vh;
+	transition: all 0.5s ease;
+}
+footer a img:hover{
+	border-radius: 7px;
+	height:6vh;
+}
